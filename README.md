@@ -3,7 +3,9 @@
 A data engineering and machine learning dashboard that detects anomalies in the USD/NGN exchange rate using three detection methods: **Isolation Forest**, **Z-Score**, and **Rolling Deviation**.
 
 ## Live Demo
-[View on Streamlit Cloud](#) ← replace with your link after deployment
+
+[View on Streamlit Cloud](https://nigeria-anomaly-detector.streamlit.app/)
+
 
 ## What it does
 - Pulls historical CBN USD/NGN exchange rate data
