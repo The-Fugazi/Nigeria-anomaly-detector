@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 from io import StringIO
 
 
-# ── Live API fetch ─────────────────────────────────────────────────────────────
+# ── Live API fetch ───
 def _fetch_live_rates() -> pd.DataFrame:
     """
     Fetches live + recent USD/NGN rates from ExchangeRate-API (free, no key needed).
@@ -42,7 +42,7 @@ def _fetch_live_rates() -> pd.DataFrame:
     return pd.DataFrame(columns=["date", "usd_ngn_rate"])
 
 
-# ── Historical backbone ────────────────────────────────────────────────────────
+# ── Historical backbone ───
 def _historical_backbone() -> pd.DataFrame:
     """
     The curated REAL USD/NGN exchange rate data based on actual CBN records.
@@ -119,7 +119,7 @@ def _historical_backbone() -> pd.DataFrame:
     return df
 
 
-# ── Main entry point ───────────────────────────────────────────────────────────
+# ── Main entry point ────
 def fetch_cbn_exchange_rates() -> pd.DataFrame:
     """
     3-layer data pipeline:
