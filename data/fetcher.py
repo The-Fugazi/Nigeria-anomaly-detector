@@ -7,7 +7,7 @@ from io import StringIO
 # ── Live API fetch ───
 def _fetch_live_rates() -> pd.DataFrame:
     """
-    Fetches live + recent USD/NGN rates from ExchangeRate-API (free, no key needed).
+    Fetches live + recent USD/NGN rates from ExchangeRate API (free, no key needed at all).
     Returns monthly data for the last 12 months up to today.
     """
     rows = []
